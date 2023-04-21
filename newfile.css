@@ -257,3 +257,8 @@ button {
 .span {
     padding-bottom: 4500px;
 }
+
+.gg {
+    border: 1px solid grey;
+    border-radius: 4px;
+}
