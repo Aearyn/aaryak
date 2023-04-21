@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaryak</title>
     <link rel="stylesheet" href="newfile.css">
-    <script></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window, scrollY > 0)
+        })
+    </script>
 </head>
 
 <body>
@@ -15,10 +20,10 @@
         <nav>
             <label class="lol">Aaryak</label>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Leisure</a></li>
-                <li><a href="">Form</a></li>
-                <li><a href="linktree">Socials</a></li>
+                <li class="hhh"><a href="">Home</a></li>
+                <li><a href="#hobbies">Leisure</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="linktr.ee/aaryak">Socials</a></li>
 
 
 
@@ -42,12 +47,16 @@
 
         </div>
 
-        <div class="hobbies">
+        <div class="hobbies" id="hobbies">
+
+
 
             <div class="hobbiesitem">
                 <h1 class="swim">Swimming</h1><br><br>
-                <p>Swimming, in recreation and sports, the propulsion of the body through water by combined arm and leg
-                    motions and the natural flotation of the body. Swimming as an exercise is popular as an all-around
+                <p>Swimming, in recreation and sports, the propulsion of the body through water by combined arm and
+                    leg
+                    motions and the natural flotation of the body. Swimming as an exercise is popular as an
+                    all-around
                     body developer and is particularly useful in therapy and as exercise for physically handicapped
                     persons.</p>
                 <a class="gg" href="https://www.swim.com/">Learn More</a>
@@ -66,7 +75,8 @@
             <div class="hobbiesitem">
                 <h1 class="swim">Coding</h1><br><br>
                 <P>Coding, sometimes called computer programming, is how we communicate with computers. Code tells a
-                    computer what actions to take, and writing code is like creating a set of instructions. By learning
+                    computer what actions to take, and writing code is like creating a set of instructions. By
+                    learning
                     to write code, you can tell computers what to do or how to behave in a much faster way.</P><br>
                 <br>
                 <a class="gg" href="https://www.w3schools.com/">Learn More</a>
@@ -78,7 +88,7 @@
 
         </div>
 
-        <div class="formcontainer">
+        <div class="formcontainer" id="form">
             <header>
                 <h1>Contact me</h1>
             </header>
